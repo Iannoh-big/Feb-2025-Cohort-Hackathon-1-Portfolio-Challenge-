@@ -1,0 +1,145 @@
+/* Basic Reset & Body Styling */
+body {
+    font-family: sans-serif; /* Clean, modern font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark gray text */
+}
+
+/* Container for centered content */
+main {
+    max-width: 960px; /* Max width of content */
+    margin: 20px auto; /* Center the content */
+    padding: 0 20px;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #333; /* Dark background for header */
+    color: #fff; /* White text */
+    padding: 1rem 0;
+    position: sticky; /* Makes navbar stick to top */
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Center navigation links */
+}
+
+nav ul li {
+    display: inline-block; /* Display links horizontally */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+nav ul li a:hover {
+    color: #ddd; /* Lighter color on hover */
+}
+
+/* Section Styling */
+section {
+    background-color: #fff; /* White background for sections */
+    margin-bottom: 20px; /* Space between sections */
+    padding: 25px;
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+section h2 {
+    color: #333;
+    border-bottom: 2px solid #eee; /* Subtle line under heading */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    color: #555;
+    margin-top: 25px;
+}
+
+/* Specific Element Styles */
+.profile-pic { /* Style for your optional photo */
+    display: block; /* Center block elements */
+    max-width: 150px;
+    border-radius: 50%; /* Makes it circular */
+    margin: 0 auto 20px auto; /* Center horizontally, add bottom margin */
+    border: 3px solid #eee;
+}
+
+ul {
+    list-style: disc; /* Default bullet points */
+    padding-left: 20px; /* Indent list */
+}
+
+#contact ul {
+    list-style: none; /* Remove bullets for contact list */
+    padding-left: 0;
+}
+
+#contact ul li {
+    margin-bottom: 10px; /* Space out contact items */
+}
+
+a {
+    color: #007bff; /* Standard blue link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for clarity */
+}
+
+/* Interest Gallery (Simple Flexbox Layout) */
+.interest-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to next line */
+    gap: 20px; /* Space between items */
+    margin-top: 15px;
+}
+
+.interest-item {
+    flex: 1 1 200px; /* Flex properties: grow, shrink, basis */
+    text-align: center;
+}
+
+.interest-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.interest-item h4 {
+    margin-bottom: 5px;
+    color: #444;
+}
+
+/* Achievement Item Spacing */
+.achievement-item {
+    margin-bottom: 20px; /* Space between achievements */
+}
+.achievement-item:last-child {
+    margin-bottom: 0; /* Remove margin from last item */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #e9e9e9; /* Lighter gray for footer */
+    color: #555;
+    font-size: 0.9em;
+}
